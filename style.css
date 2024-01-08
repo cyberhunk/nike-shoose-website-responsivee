@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+  
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: silver;
+    box-shadow: 3px 3px 13px black;
+    overflow: auto;
+
+}
+.nav{
+   height: 13vh;
+   width: 100vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    /* background-color: black; */
+}
+span{
+    cursor: pointer;
+}
+.nav .logo img{
+    height: 17vh;
+    width: 8vw;
+    margin-top: -3vh;
+    margin-right: 2vw;
+
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vw;
+
+}
+.nav .logo h4{
+    margin-left: 6vw;
+    text-transform: capitalize;
+
+}
+.nav .icon{
+    margin-right: 4vw;
+    /* width: 22vw; */
+    }
+.nav .icon span {
+
+ margin-left: 3vw;
+  
+}
+.main .content{
+    height: calc(100% - 13vh);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    height: 100%;
+    width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text{
+  width: 30vw;
+  margin-left: 8vw;
+}
+.text h1{
+    font-size: 8vh;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+}
+p{
+    width: 25vw;
+    font-weight: 600;
+}
+button{
+    padding: 14px;
+    border-radius:  2px 25px 25px 25px;
+    margin-top: 7vh;
+    color: #ffffff;
+    background-color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+.product{
+    height: 100%;
+    width: 65vw;
+  border-radius: 25px 25px 25px 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 53px;
+
+}
+.product::-webkit-scrollbar{
+    display: none;
+}
+.shoose{
+    height: 370px;
+    width: 280px;
+    background-color: #fff;
+    border-radius:10px;
+    position: relative;
+    display: inline-block;
+    margin-right: 1vw;
+    margin-top: 11vh;
+    cursor: pointer;
+    
+
+}
+.shoose img{
+    height: 85%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    position: absolute;
+    /* top: -15px; */
+
+}
+.shoose h4 {
+   position: absolute;
+    text-transform: capitalize;
+    background-color: silver;
+    padding: 5px;
+    margin-top: 13px;
+      border-radius: 0 5px 5px 0;
+}
+.shoose h3 {
+    position: absolute;
+    bottom: 0%;
+    text-transform: capitalize;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 0 0 5px 5px ;
+    padding: 4px;
+    cursor: pointer;
+    
+    
+
+}
+.nav .logo h4:hover{
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    line-height: -8px;
+    transition:step-start;
+}
+/* responsive */
+ @media (min-width:300px) and (max-width:500px){
+      
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    .nav{
+        width: 90%;
+        
+        display: none;
+       
+    }
+    /* .logo{ */
+        /* display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-left: -2vh;
+        position: absolute;
+        background-color: #5d5d5d; */
+    /* } */
+    .logo h4{
+        width: 90%;
+        margin-top: 3vh;
+    }
+    .nav .icon{
+        display: none;
+    }
+    
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+        margin-top: 8vh;
+    }
+    .text{
+        width: 100%;
+    }
+
+    .text p{
+    
+            width: 80vw;
+            margin-left: 8vw;
+          }
+          button{
+            margin-left: 10vw;
+          }
+     .product{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }     
+    
+} 
